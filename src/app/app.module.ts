@@ -3,6 +3,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { SportPage } from '../pages/sport/sport';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { Data } from '../providers/data';
@@ -11,7 +12,8 @@ import { Data } from '../providers/data';
   declarations: [
     MyApp,
     HomePage,
-    TabsPage
+    TabsPage,
+    SportPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,7 +22,8 @@ import { Data } from '../providers/data';
   entryComponents: [
     MyApp,
     HomePage,
-    TabsPage
+    TabsPage,
+    SportPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Data]
 })
