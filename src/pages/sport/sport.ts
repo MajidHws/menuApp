@@ -15,5 +15,9 @@ export class SportPage{
             this.sports = result;
         });
     }
+
+    view(){
+        console.log("hi");
+    }
     
 }
