@@ -8,7 +8,7 @@
 
 <ion-content padding>
   <ion-spinner name="circles" *ngIf="items == 0"></ion-spinner>
-  <ion-card *ngFor="let item of items; let i = index">
+  <ion-card *ngFor="let item of food; let i = index">
     <ion-card-header>
       Item Name : {{item.itemName}}
     </ion-card-header>
@@ -30,7 +30,7 @@
           <small>Date: 2017/2/25</small>
         </div>
         <hr>
-        <button ion-button full color="purpel" name="cart"><ion-icon name="eye"></ion-icon></button>
+        <button ion-button full color="purpel"><ion-icon name="eye"></ion-icon></button>
       </div>
     </ion-card-content>
   </ion-card>

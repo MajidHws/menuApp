@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="purpel" align="center">
+    <ion-title>
+      Menus
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content pandding>
+    <ion-card *ngFor="let sport of sports; let i = index">
+        <ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <img src="{{sport.img}}/{{i +1}}"/>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col width-50>
+                        <strong>Name: </strong><small>{{sport.name}}</small>
+                    </ion-col>
+                    <ion-col width-50>
+                        <strong>Age: </strong><small>{{sport.age}}</small>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col width-50>
+                        <strong>Height: </strong><small>{{sport.height}}</small>
+                    </ion-col>
+                    <ion-col width-50>
+                        <strong>Country: </strong><small>{{sport.country}}</small>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <strong>Description: </strong><small>{{sport.desc}}</small>
+                    </ion-col>
+                </ion-row>
+                <hr>
+                <ion-row>
+                    <ion-col>
+                        <button full ion-button color="purpel"><ion-icon name="eye"></ion-icon></button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

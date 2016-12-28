@@ -6,9 +6,10 @@ import 'rxjs/add/operator/map';
 @Injectable()
 
 export class Data{
-    data:any;
+    food:any;
+    sport:any;
     constructor(){
-        this.data = [
+        this.food = [
         {itemName: "Soachi", quantity: 1, desc: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard", img:"http://lorempixel.com/400/200/food"},
         {itemName: "Chease Cake", quantity: 3, desc: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard", img:"http://lorempixel.com/400/200/food"},
         {itemName: "Jojo Cave", quantity: 5, desc: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard", img:"http://lorempixel.com/400/200/food"},
@@ -38,10 +39,48 @@ export class Data{
         {itemName: "The Taste", quantity: 25, desc: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard", img:"http://lorempixel.com/400/200/food"},
 
         ]
+
+        this.sport = [
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+            {name: 'CR7', img: 'http://lorempixel.com/400/200/sports/1', desc: 'is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.', age: 31, height: 7.5, country: 'Spain'},
+        ]
     }
 
-    loadData(){
-        return Promise.resolve(this.data);
+    loadFood(){
+        return Promise.resolve(this.food);
+    }
+    loadsport(){
+        return Promise.resolve(this.sport);
     }
 
 }
